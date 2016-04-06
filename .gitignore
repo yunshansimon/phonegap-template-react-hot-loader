@@ -1,3 +1,4 @@
+### Node template
 # Logs
 logs
 *.log
@@ -12,7 +13,7 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+/dist
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
@@ -24,17 +25,60 @@ coverage
 build/Release
 
 # Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio
 
-# Optional npm cache directory
-.npm
+*.iml
 
-# Optional REPL history
-.node_repl_history
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the following:
 
-# Cordova platforms and plugins
-plugins
-platforms
+# User-specific stuff:
+# .idea/workspace.xml
+# .idea/tasks.xml
+# .idea/dictionaries
 
-# Webpack bundle
-www/bundle.js
+# Sensitive or high-churn files:
+# .idea/dataSources.ids
+# .idea/dataSources.xml
+# .idea/sqlDataSources.xml
+# .idea/dynamic.xml
+# .idea/uiDesigner.xml
+
+# Gradle:
+# .idea/gradle.xml
+# .idea/libraries
+
+# Mongo Explorer plugin:
+# .idea/mongoSettings.xml
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+# Created by .ignore support plugin (hsz.mobi)
+/info.txt
+/npm-debug.log
+/www/res/.pgbomit
+/platforms
+/node_modules
+.cordova
