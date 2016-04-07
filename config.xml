@@ -140,4 +140,5 @@
 	</platform>
 	<plugin name="cordova-plugin-whitelist" version="1" />
 	<plugin name="cordova-plugin-statusbar" spec="~2.1.0" />
+	<hook type="before_prepare" src="build/add-cordova-tag.js" />
 </widget>
