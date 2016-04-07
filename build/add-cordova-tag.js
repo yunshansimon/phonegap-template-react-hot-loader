@@ -15,8 +15,12 @@ function findTagsByName(root,name){
 
 function matchNode(nodeList,attr,regex){
   for(let node of nodeList){
-    if(regex.test(node[attr])){
-      return node
+    if(node['attrs'] instanceof Array ){
+      for (let attrObj of node.attrs){
+        if(attrObj.name === attr && regex.test(attrObj.value)){
+          return node
+        }
+      }
     }
   }
   return false
