@@ -34,7 +34,7 @@ npm install
 |--res              # cordova icons and flash screen images
 |--build            # npm build/prepare js commands
 |--www              # cordova source directory
-|--hooks            # cordova hooks directory (despaired)
+|--hooks            # cordova hooks directory (Deprecated)
 |--static           # keep for old commands
 ```
 
